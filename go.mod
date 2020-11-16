@@ -2,10 +2,6 @@ module github.com/mkke/docker-runonce
 
 go 1.15
 
-replace github.com/mkke/go-docker => ../go-docker
-
-replace github.com/mkke/go-mlog => ../go-mlog
-
 require (
 	docker.io/go-docker v1.0.0
 	github.com/Microsoft/go-winio v0.4.15 // indirect
@@ -15,8 +11,8 @@ require (
 	github.com/docker/go-units v0.4.0 // indirect
 	github.com/dustin/go-humanize v1.0.0
 	github.com/gofrs/flock v0.8.0
-	github.com/mkke/go-docker v0.0.0-00010101000000-000000000000
-	github.com/mkke/go-mlog v0.0.0-20201115114057-047aed649499
+	github.com/mkke/go-docker v0.0.0-20201116075857-ba33413fbc5b
+	github.com/mkke/go-mlog v0.0.0-20201116075153-2976a1209a5f
 	github.com/mkke/go-signalerror v0.0.0-20201114113032-fbc42d633129
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.0.1 // indirect
