@@ -5,10 +5,10 @@ LDFLAGS=-s -w -X $(VERPKG).buildDate=$(BUILD_DATE) -X $(VERPKG).buildID=$(BUILD_
 
 all: docker-runonce-darwin-amd64
 
-docker-runonce-darwin-amd64: *.go ../go-prefixwriter
+docker-runonce-darwin-amd64: *.go
 	CGO_ENABLED=0 GO111MODULE=on GOOS=darwin GOARCH=amd64 go build -o $@ -ldflags="$(LDFLAGS)"
 
-docker-runonce-linux-amd64: *.go ../go-prefixwriter
+docker-runonce-linux-amd64: *.go
 	CGO_ENABLED=0 GO111MODULE=on GOOS=linux GOARCH=amd64 go build -o $@ -ldflags="$(LDFLAGS)"
 
 clean:
